@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script defer src="js/main.js"></script>
+    <script defer src="js/dashboard.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="logo-container">
+          <img src="./assets/images/logo.png" alt="" />
+          <small class="logo-title">EGA<span>TOR</span></small>
+          <div class="closing-side">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav>
+          <a href="index.html" class="active">
+            <i class="fa-regular fa-square"></i>
+            <span>dashboard</span>
+          </a>
+          <a href="customers.html">
+            <i class="fa-regular fa-user"></i>
+            <span>customers</span>
+          </a>
+          <a href="analytics.html">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span>analytics</span>
+          </a>
+          <a href="products.html">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <span>products</span>
+          </a>
+          <a href="add-product.html">
+            <i class="fa-solid fa-plus"></i>
+            <span>add product</span>
+          </a>
+          <a href="#">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>log out</span>
+          </a>
+        </nav>
+      </aside>
+      <main>
+        <h1>dashboard</h1>
+        <input type="date" id="date" value="2026-09-21" name="dateTime" />
+        <div class="statistics">
+          <div class="card">
+            <div class="card-info">
+              <div class="card-icon sales">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+              </div>
+              <div class="total total-sales">
+                <p>total sales</p>
+                <p>$25,024</p>
+              </div>
+              <small>last 24 hours</small>
+            </div>
+            <div class="chart">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number">81%</div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="37.5"
+                  stroke-linecap="round"
+                  class="sales"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <div class="card-icon expenses">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <div class="total total-expenses">
+                <p>total expenses</p>
+                <p>$14,160</p>
+              </div>
+              <small>last 24 hours</small>
+            </div>
+            <div class="chart">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number">62%</div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="37.5"
+                  stroke-linecap="round"
+                  class="expensess"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <div class="card-icon income">
+                <i class="fa-solid fa-angles-up"></i>
+              </div>
+              <div class="total total-income">
+                <p>total income</p>
+                <p>$10,864</p>
+              </div>
+              <small>last 24 hours</small>
+            </div>
+            <div class="chart">
+              <div class="outer">
+                <div class="inner">
+                  <div class="number">44%</div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="37.5"
+                  stroke-linecap="round"
+                  class="income"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="recent-orders">
+          <p class="heading">recent orders</p>
+          <table>
+            <thead>
+              <tr>
+                <th>product name</th>
+                <th>product number</th>
+                <th>payment</th>
+                <th>status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>foldable mini drone</td>
+                <td>85613</td>
+                <td>due</td>
+                <td class="pending">pending</td>
+                <td><a href="#">details</a></td>
+              </tr>
+              <tr>
+                <td>LARVENDER KF102 drone</td>
+                <td>36378</td>
+                <td>refunded</td>
+                <td class="declined">declined</td>
+                <td><a href="#">details</a></td>
+              </tr>
+              <tr>
+                <td>ruko f11 pro drone</td>
+                <td>49347</td>
+                <td>paid</td>
+                <td class="delivered">delivered</td>
+                <td><a href="#">details</a></td>
+              </tr>
+              <tr>
+                <td>ruko f11 pro drone</td>
+                <td>49347</td>
+                <td>paid</td>
+                <td class="delivered">delivered</td>
+                <td><a href="#">details</a></td>
+              </tr>
+              <tr>
+                <td>ruko f11 pro drone</td>
+                <td>49347</td>
+                <td>paid</td>
+                <td class="delivered">delivered</td>
+                <td><a href="#">details</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="show-all">show all</a>
+        </div>
+      </main>
+      <section class="right-column">
+        <div class="top">
+            <div class="toggle-theme">
+               <input type="checkbox" id="darkmode">
+               <label for="darkmode">
+                <i class="fa-solid fa-sun sun sun"></i>
+                <i class="fa-solid fa-moon moon"></i>
+               </label>
+            </div>
+            <div class="user-profile">
+                <div class="user-info">
+                    <p>hey, <b class="userName">daniel</b></p>
+                    <small>admin</small>
+                </div>
+                <div class="user-pic">
+                    <img src="./assets/images/profile-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="recent-updates">
+            <p class="heading">recent updates</p>
+
+            <div class="updates">
+                <div class="update">
+                    <div class="user-prof">
+                        <img src="./assets/images/profile-2.jpg" alt="">
+                    </div>
+                    <div class="user-update">
+                        <p><b>mike tyson</b> received his order of night lion tech GPS drone</p>
+                        <small>2 minutes ago</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="user-prof">
+                        <img src="./assets/images/profile-3.jpg" alt="">
+                    </div>
+                    <div class="user-update">
+                        <p><b>diana ayi</b> declined her order of 2 DJ Air 2S</p>
+                        <small>5 minutes ago</small>
+                    </div>
+                </div>
+                <div class="update">
+                    <div class="user-prof">
+                        <img src="./assets/images/profile-4.jpg" alt="">
+                    </div>
+                    <div class="user-update">
+                        <p><b>mandy roy</b> received her order of LARVENDER KF102 Drone</p>
+                        <small>6 minutes ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sales-analytics">
+            <p class="heading">sales analytics</p>
+
+            <div class="sales">
+                <div class="sale-card online">
+                    <div class="sale-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="sale-info">
+                        <div class="sale-type">
+                            <p>online orders</p>
+                            <small>last 24 hours</small>
+                        </div>
+                        <p class="percentage raise">+38%</p>
+                        <p class="orders-count">3849</p>
+                    </div>
+                </div>
+                <div class="sale-card offline">
+                    <div class="sale-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="sale-info">
+                        <div class="sale-type">
+                            <p>offline orders</p>
+                            <small>last 24 hours</small>
+                        </div>
+                        <p class="percentage decline">-17%</p>
+                        <p class="orders-count">1100</p>
+                    </div>
+                </div>
+                <div class="sale-card customer">
+                    <div class="sale-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="sale-info">
+                        <div class="sale-type">
+                            <p>new customer</p>
+                            <small>last 24 hours</small>
+                        </div>
+                        <p class="percentage raise">+28%</p>
+                        <p class="orders-count">894</p>
+                    </div>
+                </div>
+                <div class="add-product">
+                    <a href="products.html">
+                        <i class="fa-solid fa-plus"></i>
+                        add product
+                    </a>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

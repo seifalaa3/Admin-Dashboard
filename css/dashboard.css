@@ -1,0 +1,570 @@
+.heading {
+    /* margin-top: 17px; */
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+aside {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 0.6rem;
+}
+
+aside .logo-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+aside .logo-container img {
+    width: 2.3rem;
+}
+
+aside .logo-container small {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+aside .logo-container small span {
+    color: var(--color-danger);
+}
+
+aside .logo-container .closing-side {
+    position: absolute;
+    right: 0.2rem;
+    cursor: pointer;
+    /* display: none; */
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 2rem;
+    position: relative;
+    height: 80vh;
+}
+
+aside nav a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    padding-left: 1.4rem;
+    color: var(--color-info-dark);
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+aside nav a span {
+    padding-left: 0.5rem;
+}
+
+aside nav a.active {
+    color: var(--color-primary);
+    background-color: var(--color-info-light);
+}
+
+aside nav a:hover {
+    background-color: var(--color-info-light);
+    color: var(--color-primary);
+}
+
+aside nav a.active::before,
+aside nav a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary);
+    height: 100%;
+    width: 5px;
+    left: 0;
+    top: 0;
+}
+
+aside nav a:last-child {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+}
+
+aside nav a:last-child:hover {
+    background-color: var(--color-danger);
+    color: var(--color-white);
+}
+
+main h1 {
+    text-transform: capitalize;
+    padding-top: 9px;
+    margin-bottom: 8px;
+}
+
+main input[type=date] {
+    padding: 5px 7px;
+    background-color: var(--color-light);
+    border-radius: 6px;
+}
+
+
+main .statistics {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+
+main .statistics .card {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-white);
+    padding: 14px;
+    flex: 1;
+    height: 180px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+main .statistics .card:hover {
+    box-shadow: none;
+}
+
+main .statistics .card .card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+main .statistics .card .card-info .card-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+main .statistics .card .card-info .card-icon.sales {
+    background-color: var(--color-primary);
+}
+
+main .statistics .card .card-info .card-icon.expenses {
+    background-color: var(--color-danger);
+}
+
+main .statistics .card .card-info .card-icon.income {
+    background-color: var(--color-success);
+}
+
+main .statistics .card .card-info .card-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+main .statistics .card .card-info .total p:first-child {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    padding-bottom: 8px;
+}
+
+main .statistics .card .card-info .total p:last-child {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+main .statistics .card .card-info small {
+    color: var(--color-info-dark);
+}
+
+main .statistics .card .chart {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin: auto 0;
+}
+
+main .statistics .card .chart svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main .statistics .card .chart svg circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15px;
+    stroke-dashoffset: 252;
+    stroke-dasharray: 252;
+    animation: anim 2s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+main .statistics .card .chart svg circle.sales {
+    animation: sales 2s linear forwards;
+}
+
+
+@keyframes sales {
+    100% {
+        stroke-dashoffset: 60;
+    }
+}
+
+main .statistics .card .chart svg circle.expensess {
+    animation: expen 2s linear forwards;
+}
+
+@keyframes expen {
+    100% {
+        stroke-dashoffset: 120;
+    }
+}
+
+main .statistics .card .chart svg circle.income {
+    animation: income 2s linear forwards;
+}
+
+@keyframes income {
+    100% {
+        stroke-dashoffset: 170;
+    }
+}
+
+main .statistics .card .chart .outer {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.3);
+
+}
+
+main .statistics .card .chart .outer .inner {
+    width: 60px;
+    height: 60px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .statistics .card .chart .outer .inner .number {
+    font-weight: 800;
+}
+
+main .recent-orders {
+    margin-top: 15px;
+    position: relative;
+}
+
+main .recent-orders table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: center;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .recent-orders table thead tr th {
+    text-transform: capitalize;
+}
+
+
+main .recent-orders table tbody tr {
+    position: relative;
+}
+
+main .recent-orders table tbody tr::after {
+    content: "";
+    position: absolute;
+    background-color: var(--color-info-light);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+
+main .recent-orders table tbody tr:last-child::after {
+    display: none;
+}
+
+main .recent-orders table tbody tr td {
+    padding: 10px 0;
+    color: var(--color-dark-variant);
+    text-transform: capitalize;
+}
+
+main .recent-orders table tbody tr td a {
+    color: var(--color-primary);
+    transition: 300ms;
+}
+
+main .recent-orders table tbody tr td a:hover {
+    color: var(--color-primary-variant);
+}
+
+main .recent-orders table tbody tr td.pending {
+    color: var(--color-warning);
+}
+
+main .recent-orders table tbody tr td.declined {
+    color: var(--color-danger);
+}
+
+main .recent-orders table tbody tr td.delivered {
+    color: var(--color-primary);
+}
+
+main .recent-orders .show-all {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: capitalize;
+    color: var(--color-primary);
+    transition: 300ms;
+}
+
+main .recent-orders .show-all:hover {
+    color: var(--color-primary-variant);
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+.right-column .top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
+.right-column .top .toggle-theme {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column .top .toggle-theme label {
+    width: 60px;
+    height: 25px;
+    background-color: var(--color-info-light);
+    border-radius: 260px;
+    position: relative;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+    cursor: pointer;
+    top: -6px;
+}
+
+.right-column .top .toggle-theme label i {
+    position: absolute;
+    z-index: 100;
+    top: 7px;
+    color: white;
+    font-size: 11px;
+}
+
+.right-column .top .toggle-theme label i.sun {
+    left: 5px;
+}
+
+.right-column .top .toggle-theme label i.moon {
+    right: 5px;
+}
+
+.right-column .top .toggle-theme input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.right-column .top .toggle-theme label::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: .3s;
+}
+
+.right-column .top .toggle-theme label:active::after {
+    width: 26px;
+}
+
+.right-column .top .toggle-theme input:checked+label::after {
+    left: 58px;
+    transform: translateX(-100%);
+}
+
+.right-column .top .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-column .top .user-info {
+    text-transform: capitalize;
+}
+
+.right-column .top .user-info p {
+    color: var(--color-info-dark);
+    padding-bottom: 5px;
+}
+
+.right-column .top .user-info p b {
+    color: black;
+}
+
+.right-column .top .user-info small {
+    text-align: end;
+    display: block;
+    color: var(--color-info-dark);
+}
+
+.right-column .top .user-profile .user-pic img {
+    border-radius: 50%;
+    height: 40px;
+}
+
+
+.right-column .recent-updates .updates {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right-column .updates .update {
+    display: flex;
+    gap: 20px;
+    padding: 4px;
+}
+
+.right-column .updates .update .user-prof img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.right-column .updates .update .user-update p {
+    color: var(--color-info-dark);
+    padding-bottom: 3px;
+    line-height: 1.3;
+    font-size: 1rem;
+}
+
+.right-column .updates .update .user-update p b {
+    color: black;
+    text-transform: capitalize;
+}
+
+.right-column .updates .update .user-update small {
+    color: var(--color-info-dark);
+}
+
+.right-column .sales-analytics .sales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-column .sales-analytics .sales .sale-card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-icon {
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.right-column .sales-analytics .sales .sale-card.online .sale-icon {
+    background-color: var(--color-primary);
+}
+
+.right-column .sales-analytics .sales .sale-card.offline .sale-icon {
+    background-color: var(--color-danger);
+}
+
+.right-column .sales-analytics .sales .sale-card.customer .sale-icon {
+    background-color: var(--color-success);
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info .sale-type p {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding-bottom: 2px;
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info .sale-type small {
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    color: var(--color-info-dark);
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info p {
+    font-weight: 800;
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info p.raise {
+    color: var(--color-success);
+}
+
+.right-column .sales-analytics .sales .sale-card .sale-info p.decline {
+    color: var(--color-danger);
+
+}
+
+.right-column .sales-analytics .sales .add-product {
+    text-align: center;
+    padding: 15px;
+    border: 2px dashed var(--color-primary);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right-column .sales-analytics .sales .add-product a {
+    color: var(--color-primary);
+}
