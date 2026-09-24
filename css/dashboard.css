@@ -112,7 +112,7 @@ main .statistics {
     justify-content: space-between;
     gap: 10px;
     margin-top: 20px;
-
+    /* flex-wrap: wrap; */
 }
 
 
@@ -336,8 +336,9 @@ main .recent-orders table tbody tr td.delivered {
 }
 
 main .recent-orders .show-all {
-    position: absolute;
-    left: 50%;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
     text-align: center;
     padding-top: 10px;
     text-transform: capitalize;
@@ -361,6 +362,12 @@ main .recent-orders .show-all:hover {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 1rem;
+
+}
+
+
+.right-column .top .bars {
+    display: none;
 
 }
 
@@ -567,4 +574,171 @@ main .recent-orders .show-all:hover {
 
 .right-column .sales-analytics .sales .add-product a {
     color: var(--color-primary);
+}
+
+
+
+/* media queries */
+@media(max-width:1253px) {
+    .container {
+        grid-template-columns: 7rem auto 23rem;
+        width: 97%;
+    }
+
+    aside .logo-container img {
+        margin-left: 1rem;
+    }
+
+    aside .logo-container small {
+        display: none;
+    }
+
+    aside .logo-container i {
+        display: none;
+    }
+
+    nav a {
+        width: 5rem;
+    }
+
+    aside nav a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+        width: 5rem;
+
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    main .statistics {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    main .recent-orders {
+        width: 80vw;
+        position: absolute;
+    }
+
+    main .recent-orders table {
+        margin-top: -5px;
+    }
+
+    main .recent-orders .show-all {
+        position: relative;
+        padding: 0.8rem 0;
+        top: 10px;
+        bottom: 30px;
+    }
+}
+
+
+
+@media(max-width:780px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        left: 0;
+        background-color: var(--color-white);
+        z-index: 4;
+        width: 18rem;
+        box-shadow: var(--box-shadow);
+        height: 100vh;
+        padding-right: 1.8rem;
+        display: none;
+    }
+
+    aside .logo-container img {
+        margin-right: 1rem;
+    }
+
+    aside .logo-container i {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    aside .logo-container small {
+        display: inline;
+    }
+
+    aside nav a {
+        width: 100%;
+    }
+
+    aside nav a span {
+        display: inline;
+
+    }
+
+    aside nav a:last-child {
+        width: 100%;
+        position: absolute;
+    }
+
+    main {
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    main .statistics .card .chart {
+        padding-right: 150px;
+    }
+
+    main .recent-orders {
+        position: relative;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    main .recent-orders table {
+        width: 100%;
+        margin: 0;
+    }
+
+    main .recent-orders table thead tr th:first-child,
+    main .recent-orders table tbody tr td:first-child,
+    main .recent-orders table tbody tr td:last-child {
+        display: none;
+    }
+
+    .right-column {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right-column .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0 0.8rem;
+        height: 4.6rem;
+        background-color: var(--color-white);
+        width: 100%;
+        margin: 0;
+        justify-content: end;
+        gap: 20px;
+        padding-right: 1rem;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right-column .top .toggle-theme label {
+        top: 0;
+    }
+
+    .right-column .top .bars {
+        display: inline-block;
+        position: absolute;
+        left: 1rem;
+        font-size: 1.5rem;
+        top: 22px;
+        cursor: pointer;
+    }
 }
