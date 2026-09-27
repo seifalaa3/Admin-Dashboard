@@ -1,0 +1,698 @@
+{
+  "statistics": {
+    "sales": [
+      {
+        "date": "2026-09-15",
+        "amount": 21840,
+        "percentage": 72,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "amount": 23150,
+        "percentage": 75,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "amount": 24280,
+        "percentage": 78,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "amount": 25024,
+        "percentage": 81,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "amount": 26780,
+        "percentage": 84,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "amount": 27540,
+        "percentage": 87,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "amount": 28950,
+        "percentage": 91,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      }
+    ],
+
+    "expenses": [
+      {
+        "date": "2026-09-15",
+        "amount": 12840,
+        "percentage": 55,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "amount": 13420,
+        "percentage": 57,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "amount": 13980,
+        "percentage": 59,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "amount": 14160,
+        "percentage": 62,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "amount": 14890,
+        "percentage": 65,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "amount": 15320,
+        "percentage": 68,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "amount": 16140,
+        "percentage": 71,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      }
+    ],
+
+    "income": [
+      {
+        "date": "2026-09-15",
+        "amount": 9000,
+        "percentage": 38,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "amount": 9730,
+        "percentage": 40,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "amount": 10300,
+        "percentage": 42,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "amount": 10864,
+        "percentage": 44,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "amount": 11890,
+        "percentage": 48,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "amount": 12220,
+        "percentage": 51,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "amount": 12810,
+        "percentage": 54,
+        "chart": {
+          "cx": 45,
+          "cy": 45,
+          "r": 40
+        }
+      }
+    ]
+  },
+  "recentOrders": [
+    {
+      "date": "2026-09-15",
+      "productName": "Foldable Mini Drone",
+      "productNumber": 85613,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-15",
+      "productName": "LARVENDER KF102 Drone",
+      "productNumber": 36378,
+      "payment": "refunded",
+      "status": "declined"
+    },
+    {
+      "date": "2026-09-15",
+      "productName": "Ruko F11 Pro Drone",
+      "productNumber": 49347,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-16",
+      "productName": "DJI Mini 4 Pro",
+      "productNumber": 72154,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-16",
+      "productName": "Holy Stone HS720E",
+      "productNumber": 61482,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-16",
+      "productName": "Potensic ATOM SE",
+      "productNumber": 93517,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-17",
+      "productName": "DJI Air 3",
+      "productNumber": 48261,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-17",
+      "productName": "Autel EVO Nano+",
+      "productNumber": 31875,
+      "payment": "refunded",
+      "status": "declined"
+    },
+    {
+      "date": "2026-09-17",
+      "productName": "DJI Avata 2",
+      "productNumber": 54729,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-18",
+      "productName": "Ryze Tello Drone",
+      "productNumber": 68241,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-18",
+      "productName": "Holy Stone HS440",
+      "productNumber": 19463,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-18",
+      "productName": "DJI Mini 3",
+      "productNumber": 75382,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-19",
+      "productName": "Potensic D58",
+      "productNumber": 42619,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-19",
+      "productName": "Autel EVO Lite",
+      "productNumber": 83157,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-19",
+      "productName": "DJI Mavic 3 Classic",
+      "productNumber": 26741,
+      "payment": "refunded",
+      "status": "declined"
+    },
+    {
+      "date": "2026-09-20",
+      "productName": "Holy Stone HS720",
+      "productNumber": 51436,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-20",
+      "productName": "DJI Mini 2 SE",
+      "productNumber": 64827,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-20",
+      "productName": "Potensic Atom",
+      "productNumber": 37915,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-21",
+      "productName": "Autel EVO Lite+",
+      "productNumber": 92548,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-21",
+      "productName": "DJI Phantom 4 Pro",
+      "productNumber": 14682,
+      "payment": "refunded",
+      "status": "declined"
+    },
+    {
+      "date": "2026-09-21",
+      "productName": "Holy Stone HS720R",
+      "productNumber": 58394,
+      "payment": "paid",
+      "status": "delivered"
+    },
+    {
+      "date": "2026-09-21",
+      "productName": "DJI Mavic Air 2",
+      "productNumber": 73926,
+      "payment": "due",
+      "status": "pending"
+    },
+    {
+      "date": "2026-09-21",
+      "productName": "Ruko F11GIM2",
+      "productNumber": 26184,
+      "payment": "paid",
+      "status": "delivered"
+    }
+  ],
+  "recentUpdates": [
+    {
+      "date": "2026-09-15",
+      "name": "Mike Tyson",
+      "time": "2 minutes ago",
+      "message": "received his order of Night Lion Tech GPS Drone",
+      "image": "./assets/images/profile-2.jpg"
+    },
+    {
+      "date": "2026-09-15",
+      "name": "Sarah Johnson",
+      "time": "15 minutes ago",
+      "message": "completed her payment for DJI Mini 4 Pro",
+      "image": "./assets/images/profile-3.jpg"
+    },
+    {
+      "date": "2026-09-15",
+      "name": "David Smith",
+      "time": "32 minutes ago",
+      "message": "placed a new order for Ruko F11 Pro Drone",
+      "image": "./assets/images/profile-4.jpg"
+    },
+
+    {
+      "date": "2026-09-16",
+      "name": "Emma Wilson",
+      "time": "5 minutes ago",
+      "message": "requested a refund for Autel EVO Nano+",
+      "image": "./assets/images/profile-5.jpg"
+    },
+    {
+      "date": "2026-09-16",
+      "name": "James Brown",
+      "time": "28 minutes ago",
+      "message": "received his order of DJI Air 3",
+      "image": "./assets/images/profile-6.jpg"
+    },
+    {
+      "date": "2026-09-16",
+      "name": "Olivia Davis",
+      "time": "1 hour ago",
+      "message": "completed her payment for Holy Stone HS720E",
+      "image": "./assets/images/profile-7.jpg"
+    },
+
+    {
+      "date": "2026-09-17",
+      "name": "Daniel Miller",
+      "time": "3 minutes ago",
+      "message": "placed a new order for DJI Avata 2",
+      "image": "./assets/images/profile-8.jpg"
+    },
+    {
+      "date": "2026-09-17",
+      "name": "Sophia Anderson",
+      "time": "18 minutes ago",
+      "message": "received her order of Holy Stone HS440",
+      "image": "./assets/images/profile-9.jpg"
+    },
+    {
+      "date": "2026-09-17",
+      "name": "William Taylor",
+      "time": "45 minutes ago",
+      "message": "completed his payment for DJI Mini 3",
+      "image": "./assets/images/profile-1.jpg"
+    },
+
+    {
+      "date": "2026-09-18",
+      "name": "Robert Thomas",
+      "time": "7 minutes ago",
+      "message": "placed a new order for Potensic D58",
+      "image": "./assets/images/profile-3.jpg"
+    },
+    {
+      "date": "2026-09-18",
+      "name": "Emily Moore",
+      "time": "24 minutes ago",
+      "message": "completed her payment for Autel EVO Lite",
+      "image": "./assets/images/profile-2.jpg"
+    },
+    {
+      "date": "2026-09-18",
+      "name": "Michael Jackson",
+      "time": "1 hour ago",
+      "message": "requested a refund for DJI Mavic 3 Classic",
+      "image": "./assets/images/profile-5.jpg"
+    },
+
+    {
+      "date": "2026-09-19",
+      "name": "Christopher White",
+      "time": "4 minutes ago",
+      "message": "received his order of Holy Stone HS720",
+      "image": "./assets/images/profile-7.jpg"
+    },
+    {
+      "date": "2026-09-19",
+      "name": "Ava Harris",
+      "time": "20 minutes ago",
+      "message": "placed a new order for DJI Mini 2 SE",
+      "image": "./assets/images/profile-9.jpg"
+    },
+    {
+      "date": "2026-09-19",
+      "name": "Joseph Martin",
+      "time": "55 minutes ago",
+      "message": "completed his payment for Potensic Atom",
+      "image": "./assets/images/profile-4.jpg"
+    },
+
+    {
+      "date": "2026-09-20",
+      "name": "Isabella Thompson",
+      "time": "6 minutes ago",
+      "message": "received her order of Autel EVO Lite+",
+      "image": "./assets/images/profile-9.jpg"
+    },
+    {
+      "date": "2026-09-20",
+      "name": "Charles Garcia",
+      "time": "17 minutes ago",
+      "message": "requested a refund for DJI Phantom 4 Pro",
+      "image": "./assets/images/profile-8.jpg"
+    },
+    {
+      "date": "2026-09-20",
+      "name": "Mia Martinez",
+      "time": "42 minutes ago",
+      "message": "placed a new order for DJI Mavic Air 2",
+      "image": "./assets/images/profile-2.jpg"
+    },
+
+    {
+      "date": "2026-09-21",
+      "name": "Noah Robinson",
+      "time": "2 minutes ago",
+      "message": "received his order of Ruko F11GIM2",
+      "image": "./assets/images/profile-5.jpg"
+    },
+    {
+      "date": "2026-09-21",
+      "name": "Charlotte Clark",
+      "time": "15 minutes ago",
+      "message": "completed her payment for DJI Spark",
+      "image": "./assets/images/profile-9.jpg"
+    },
+    {
+      "date": "2026-09-21",
+      "name": "Liam Lewis",
+      "time": "35 minutes ago",
+      "message": "placed a new order for Potensic T25",
+      "image": "./assets/images/profile-1.jpg"
+    }
+  ],
+
+  "salesAnalytics": {
+    "onlineOrders": [
+      {
+        "date": "2026-09-15",
+        "period": "last 24 hours",
+        "orders": 3849,
+        "percentage": 32,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-16",
+        "period": "last 24 hours",
+        "orders": 3975,
+        "percentage": 35,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-17",
+        "period": "last 24 hours",
+        "orders": 4120,
+        "percentage": 38,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-18",
+        "period": "last 24 hours",
+        "orders": 4250,
+        "percentage": 41,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-19",
+        "period": "last 24 hours",
+        "orders": 4390,
+        "percentage": 44,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-20",
+        "period": "last 24 hours",
+        "orders": 4510,
+        "percentage": 47,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-21",
+        "period": "last 24 hours",
+        "orders": 4680,
+        "percentage": 50,
+        "trend": "raise"
+      }
+    ],
+
+    "offlineOrders": [
+      {
+        "date": "2026-09-15",
+        "period": "last 24 hours",
+        "orders": 1100,
+        "percentage": 17,
+        "trend": "decline"
+      },
+      {
+        "date": "2026-09-16",
+        "period": "last 24 hours",
+        "orders": 1050,
+        "percentage": 14,
+        "trend": "decline"
+      },
+      {
+        "date": "2026-09-17",
+        "period": "last 24 hours",
+        "orders": 1180,
+        "percentage": 19,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-18",
+        "period": "last 24 hours",
+        "orders": 1215,
+        "percentage": 21,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-19",
+        "period": "last 24 hours",
+        "orders": 1160,
+        "percentage": 16,
+        "trend": "decline"
+      },
+      {
+        "date": "2026-09-20",
+        "period": "last 24 hours",
+        "orders": 1095,
+        "percentage": 12,
+        "trend": "decline"
+      },
+      {
+        "date": "2026-09-21",
+        "period": "last 24 hours",
+        "orders": 1130,
+        "percentage": 15,
+        "trend": "decline"
+      }
+    ],
+
+    "newCustomers": [
+      {
+        "date": "2026-09-15",
+        "period": "last 24 hours",
+        "orders": 849,
+        "percentage": 25,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-16",
+        "period": "last 24 hours",
+        "orders": 872,
+        "percentage": 27,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-17",
+        "period": "last 24 hours",
+        "orders": 910,
+        "percentage": 29,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-18",
+        "period": "last 24 hours",
+        "orders": 935,
+        "percentage": 31,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-19",
+        "period": "last 24 hours",
+        "orders": 968,
+        "percentage": 33,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-20",
+        "period": "last 24 hours",
+        "orders": 1005,
+        "percentage": 36,
+        "trend": "raise"
+      },
+      {
+        "date": "2026-09-21",
+        "period": "last 24 hours",
+        "orders": 1042,
+        "percentage": 39,
+        "trend": "raise"
+      }
+    ]
+  }
+}

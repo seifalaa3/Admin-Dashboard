@@ -52,7 +52,7 @@
       </aside>
       <main>
         <h1>dashboard</h1>
-        <input type="date" id="date" value="2026-09-21" name="dateTime" />
+        <input type="date" id="date" name="dateTime" />
         <div class="statistics">
           <div class="card">
             <div class="card-info">
@@ -61,14 +61,17 @@
               </div>
               <div class="total total-sales">
                 <p>total sales</p>
-                <p>$25,024</p>
+                <p id="sales-no">
+                  <!-- $25,024 -->
+                  0
+                </p>
               </div>
               <small>last 24 hours</small>
             </div>
             <div class="chart">
               <div class="outer">
                 <div class="inner">
-                  <div class="number">81%</div>
+                  <div class="number" id="sale-percentage">0%</div>
                 </div>
               </div>
               <svg
@@ -100,14 +103,14 @@
               </div>
               <div class="total total-expenses">
                 <p>total expenses</p>
-                <p>$14,160</p>
+                <p id="expensess-no">0</p>
               </div>
               <small>last 24 hours</small>
             </div>
             <div class="chart">
               <div class="outer">
                 <div class="inner">
-                  <div class="number">62%</div>
+                  <div class="number" id="exp-percentage">0%</div>
                 </div>
               </div>
               <svg
@@ -139,14 +142,14 @@
               </div>
               <div class="total total-income">
                 <p>total income</p>
-                <p>$10,864</p>
+                <p id="income-no">0</p>
               </div>
               <small>last 24 hours</small>
             </div>
             <div class="chart">
               <div class="outer">
                 <div class="inner">
-                  <div class="number">44%</div>
+                  <div class="number" id="income-percentage">0%</div>
                 </div>
               </div>
               <svg
@@ -183,150 +186,64 @@
                 <th>status</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>foldable mini drone</td>
-                <td>85613</td>
-                <td>due</td>
-                <td class="pending">pending</td>
-                <td><a href="#">details</a></td>
-              </tr>
-              <tr>
-                <td>LARVENDER KF102 drone</td>
-                <td>36378</td>
-                <td>refunded</td>
-                <td class="declined">declined</td>
-                <td><a href="#">details</a></td>
-              </tr>
-              <tr>
-                <td>ruko f11 pro drone</td>
-                <td>49347</td>
-                <td>paid</td>
-                <td class="delivered">delivered</td>
-                <td><a href="#">details</a></td>
-              </tr>
-              <tr>
-                <td>ruko f11 pro drone</td>
-                <td>49347</td>
-                <td>paid</td>
-                <td class="delivered">delivered</td>
-                <td><a href="#">details</a></td>
-              </tr>
-              <tr>
-                <td>ruko f11 pro drone</td>
-                <td>49347</td>
-                <td>paid</td>
-                <td class="delivered">delivered</td>
-                <td><a href="#">details</a></td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
           <a href="#" class="show-all">show all</a>
         </div>
       </main>
       <section class="right-column">
-          <div class="top">
-            <i class="fa-solid fa-bars bars"></i>
-            <div class="toggle-theme">
-               <input type="checkbox" id="darkmode">
-               <label for="darkmode">
-                <i class="fa-solid fa-sun sun sun"></i>
-                <i class="fa-solid fa-moon moon"></i>
-               </label>
+        <div class="top">
+          <i class="fa-solid fa-bars bars"></i>
+          <div class="toggle-theme">
+            <input type="checkbox" id="darkmode" />
+            <label for="darkmode">
+              <i class="fa-solid fa-sun sun sun"></i>
+              <i class="fa-solid fa-moon moon"></i>
+            </label>
+          </div>
+          <div class="user-profile">
+            <div class="user-info">
+              <p>hey, <b class="userName">daniel</b></p>
+              <small>admin</small>
             </div>
-            <div class="user-profile">
-                <div class="user-info">
-                    <p>hey, <b class="userName">daniel</b></p>
-                    <small>admin</small>
-                </div>
-                <div class="user-pic">
-                    <img src="./assets/images/profile-1.jpg" alt="">
-                </div>
+            <div class="user-pic">
+              <img src="./assets/images/profile-1.jpg" alt="" />
             </div>
+          </div>
         </div>
         <div class="recent-updates">
-            <p class="heading">recent updates</p>
-
-            <div class="updates">
-                <div class="update">
-                    <div class="user-prof">
-                        <img src="./assets/images/profile-2.jpg" alt="">
-                    </div>
-                    <div class="user-update">
-                        <p><b>mike tyson</b> received his order of night lion tech GPS drone</p>
-                        <small>2 minutes ago</small>
-                    </div>
-                </div>
-                <div class="update">
-                    <div class="user-prof">
-                        <img src="./assets/images/profile-3.jpg" alt="">
-                    </div>
-                    <div class="user-update">
-                        <p><b>diana ayi</b> declined her order of 2 DJ Air 2S</p>
-                        <small>5 minutes ago</small>
-                    </div>
-                </div>
-                <div class="update">
-                    <div class="user-prof">
-                        <img src="./assets/images/profile-4.jpg" alt="">
-                    </div>
-                    <div class="user-update">
-                        <p><b>mandy roy</b> received her order of LARVENDER KF102 Drone</p>
-                        <small>6 minutes ago</small>
-                    </div>
-                </div>
-            </div>
+          <p class="heading">recent updates</p>
+          <div class="updates"></div>
         </div>
         <div class="sales-analytics">
-            <p class="heading">sales analytics</p>
+          <p class="heading">sales analytics</p>
 
-            <div class="sales">
-                <div class="sale-card online">
-                    <div class="sale-icon">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                    <div class="sale-info">
-                        <div class="sale-type">
-                            <p>online orders</p>
-                            <small>last 24 hours</small>
-                        </div>
-                        <p class="percentage raise">+38%</p>
-                        <p class="orders-count">3849</p>
-                    </div>
-                </div>
-                <div class="sale-card offline">
-                    <div class="sale-icon">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
-                    <div class="sale-info">
-                        <div class="sale-type">
-                            <p>offline orders</p>
-                            <small>last 24 hours</small>
-                        </div>
-                        <p class="percentage decline">-17%</p>
-                        <p class="orders-count">1100</p>
-                    </div>
-                </div>
-                <div class="sale-card customer">
-                    <div class="sale-icon">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="sale-info">
-                        <div class="sale-type">
-                            <p>new customer</p>
-                            <small>last 24 hours</small>
-                        </div>
-                        <p class="percentage raise">+28%</p>
-                        <p class="orders-count">894</p>
-                    </div>
-                </div>
-                <div class="add-product">
-                    <a href="products.html">
-                        <i class="fa-solid fa-plus"></i>
-                        add product
-                    </a>
-                </div>
+          <div class="sales">
+            <div class="sale-card online">
+              <div class="sale-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="sale-info"></div>
             </div>
+            <div class="sale-card offline">
+              <div class="sale-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </div>
+              <div class="sale-info"></div>
+            </div>
+            <div class="sale-card customer">
+              <div class="sale-icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="sale-info"></div>
+            </div>
+            <div class="add-product">
+              <a href="products.html">
+                <i class="fa-solid fa-plus"></i>
+                add product
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
